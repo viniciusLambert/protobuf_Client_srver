@@ -1,0 +1,48 @@
+PYTHON------------------------
+      Instalações.
+        grcp - pip install grpcio-tools
+        pip install googleapis-common-protos
+
+      Gerar protos.
+
+        (executar na pasta soma)--
+         python -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=. ../../protos/soma.proto
+
+      Executar codigo -
+        python nome-codigo.py
+
+
+
+      LINK ÚTEIS:
+        https://grpc.io/docs/tutorials/basic/python.html
+
+
+
+C++ --------------------------
+      Instalação.
+        [sudo] apt-get install build-essential autoconf libtool pkg-config
+        [sudo] apt-get install libgflags-dev libgtest-dev
+        [sudo] apt-get install clang libc++-dev
+        git clone https://github.com/grpc/grpc.git
+        cd grpc
+        git submodule update --init
+        make
+        sudo make install
+
+
+
+      Gerar protos
+       protoc -I ../../protos --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` ../../protos/helloworld.proto
+
+       protoc -I ../../protos --cpp_out=. ../../protos/helloworld.proto
+
+
+      LINK ÚTEIS:
+        https://grpc.io/docs/tutorials/basic/java.html
+
+
+
+
+Possiveis perguntas ----------------
+
+  Segurança.
