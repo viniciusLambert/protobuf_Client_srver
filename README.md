@@ -2,10 +2,10 @@
 A toy program to comunicate with multiple lenguages
 
 # Instalação PROTOBUF
-curl -OL https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip
-unzip protoc-3.2.0-linux-x86_64.zip -d protoc3
-sudo mv protoc3/bin/* /usr/local/bin/
-sudo mv protoc3/include/* /usr/local/include/
+    curl -OL https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip
+    unzip protoc-3.2.0-linux-x86_64.zip -d protoc3
+    sudo mv protoc3/bin/* /usr/local/bin/
+    sudo mv protoc3/include/* /usr/local/include/
 
 
 
@@ -20,12 +20,12 @@ sudo mv protoc3/include/* /usr/local/include/
 ##      Gerar protos.
 
 (executar na pasta soma)--
-python -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=. ../../protos/soma.proto
+    python -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=. ../../protos/soma.proto
 
 Os protos estão na pasta proto
 
 Executar codigo -
-python nome-codigo.py
+    python nome-codigo.py
 
 
 
@@ -36,10 +36,10 @@ python nome-codigo.py
 
 # JAVA
 ##      Instalação.
-sudo apt-get install default-jdk
-git clone -b v1.14.0 https://github.com/grpc/grpc-java.git
-cd grpc-java/examples
-./gradlew installDist
+    sudo apt-get install default-jdk
+    git clone -b v1.14.0 https://github.com/grpc/grpc-java.git
+    cd grpc-java/examples
+    ./gradlew installDist
 
 
 
