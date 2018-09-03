@@ -13,7 +13,7 @@ class Send(soma_pb2_grpc.SendServicer):
 
     def realizar(self, request, context):
         print("Os numeros recebidos foram:", request.n1, request.n2, "a o resultado da soma é:" , request.n1+request.n2)
-        return soma_pb2.soma(s = request.n1 + request.n2 )#% request.name)
+        return soma_pb2.soma(s = request.n1 + request.n2 )
 
 
 def serve():
