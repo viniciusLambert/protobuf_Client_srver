@@ -1,11 +1,7 @@
-#Os código Helloword foram tirados dos repositorios proprietarios do Grcp
-
-
-
 # protobuf_Client_srver
 A toy program to comunicate with multiple lenguages
 
-Instalação PROTOBUF---------------------------------------------------
+# Instalação PROTOBUF
     curl -OL https://github.com/google/protobuf/releases/download/v3.2.0/protoc-3.2.0-linux-x86_64.zip
     unzip protoc-3.2.0-linux-x86_64.zip -d protoc3
     sudo mv protoc3/bin/* /usr/local/bin/
@@ -14,14 +10,14 @@ Instalação PROTOBUF---------------------------------------------------
 
 
 
-PYTHON------------------------
-        Instalação
-          GRCP----------------------------------------------------------
-            grcp - pip install grpcio-tools
-            pip install googleapis-common-protos
+# PYTHON
+##        Instalação
+###          GRPC
+              grcp - pip install grpcio-tools
+              pip install googleapis-common-protos
 
 
-      Gerar protos.
+##      Gerar protos.
 
         (executar na pasta soma)--
          python -m grpc_tools.protoc -I../../protos --python_out=. --grpc_python_out=. ../../protos/soma.proto
@@ -33,13 +29,13 @@ PYTHON------------------------
 
 
 
-      LINK ÚTEIS:
+##      LINK ÚTEIS:
         https://grpc.io/docs/tutorials/basic/python.html
 
 
 
-JAVA --------------------------
-      Instalação.
+# JAVA
+##      Instalação.
         sudo apt-get install default-jdk
         git clone -b v1.14.0 https://github.com/grpc/grpc-java.git
         cd grpc-java/examples
@@ -47,7 +43,8 @@ JAVA --------------------------
 
 
 
-      Gerar protos
+##      Gerar protos
+
         Colocar os protos na pasta
           grcp-java/examples/src/main/proto
         E os .java
@@ -63,12 +60,9 @@ JAVA --------------------------
 
 
 
-      LINK ÚTEIS:
+##      LINK ÚTEIS:
         https://grpc.io/docs/tutorials/basic/java.html
         https://developers.google.com/protocol-buffers/docs/reference/java-generated
 
 
-
-Possiveis perguntas ----------------
-
-  Segurança.
+### Os código Helloword foram tirados dos repositorios proprietarios do Grcp
